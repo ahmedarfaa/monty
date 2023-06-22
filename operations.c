@@ -23,7 +23,7 @@ void _add(stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: can't add, stack too short\n", count);
 		fclose(alx.file);
 		free(alx.buf);
-		free_stack(*head);
+		_free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
