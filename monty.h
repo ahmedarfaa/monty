@@ -72,7 +72,6 @@ void _addnode(stack_t **head, int n);
 void _addqueue(stack_t **head, int n);
 void _queue(stack_t **head, unsigned int counter);
 void _stack(stack_t **head, unsigned int counter);
-char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 void _push(stack_t **head, unsigned int number);
 void _pall(stack_t **head, unsigned int number);
 void _pint(stack_t **head, unsigned int number);
