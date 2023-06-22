@@ -52,6 +52,8 @@ typedef struct alx_s
 }  alx_t;
 extern alx_t alx;
 
+
+int _execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void _pop(stack_t **head, unsigned int counter);
 void _swap(stack_t **head, unsigned int counter);
 void _add(stack_t **head, unsigned int counter);
@@ -69,12 +71,9 @@ void _addqueue(stack_t **head, int n);
 void _queue(stack_t **head, unsigned int counter);
 void _stack(stack_t **head, unsigned int counter);
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
-ssize_t _getstdin(char **lineptr, int file);
-char  *_clean_line(char *content);
 void _push(stack_t **head, unsigned int number);
 void _pall(stack_t **head, unsigned int number);
 void _pint(stack_t **head, unsigned int number);
-int _execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void _free_stack(stack_t *head);
 
 #endif
