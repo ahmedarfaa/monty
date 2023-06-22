@@ -13,3 +13,6 @@ this project done by    "ahmedarfaa594@gmail.com"
 - we handled the opertions alone andthe commands alone 
 	in separate files
 - then we checked our functions and commands locally on terminal
+- contact us on gmail for any concerning
+
+-- thanks for reading
