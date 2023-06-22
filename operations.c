@@ -53,7 +53,7 @@ void _sub(stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: can't sub, stack too short\n", count);
 		fclose(alx.file);
 		free(alx.buf);
-		free_stack(*head);
+		_free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	tot = *head;
@@ -86,7 +86,7 @@ void _mul(stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: can't mul, stack too short\n", count);
 		fclose(alx.file);
 		free(alx.buf);
-		free_stack(*head);
+		_free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
