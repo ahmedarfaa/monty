@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
-* execute - exec opcode
+* _execute - exec opcode
 * @st: head of the linked list of the stack
 * @count: ..
 * @file: poiner to a monty fi
