@@ -2,7 +2,7 @@
 /**
  * _pstr - a function that prints the string
  * @head: stack head
- * @count: line_number
+ * @count: ..
 */
 void _pstr(stack_t **head, unsigned int count)
 {
