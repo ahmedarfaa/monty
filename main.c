@@ -1,12 +1,12 @@
 #include "monty.h"
 
+alx_t alx = {NULL, NULL, NULL, 0};
 /**
 * main - monty code interpreter
 * @argc: n.f args
 * @argv: file location
 * Return: 0
 */
-alx_t alx = {NULL, NULL, NULL, 0};
 
 int main(int argc, char *argv[])
 {
