@@ -27,7 +27,7 @@ void _add(stack_t **head, unsigned int count)
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
-	aux = h->n + h->next->n;
+	tot = h->n + h->next->n;
 	h->next->n = tot;
 	*head = h->next;
 	free(h);
@@ -117,7 +117,7 @@ void _div(stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: can't div, stack too short\n", count);
 		fclose(alx.file);
 		free(alx.buf);
-		free_stack(*head);
+		_free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
@@ -126,7 +126,7 @@ void _div(stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: division by zero\n", count);
 		fclose(alx.file);
 		free(alx.buf);
-		free_stack(*head);
+		_free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	tot = h->next->n / h->n;
